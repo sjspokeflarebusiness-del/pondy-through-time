@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pondy Through Time | Watch</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <style>
+        .video-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 4rem; }
+        .video-card {
+            background: var(--bg-card); border-radius: 20px; overflow: hidden;
+            border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: var(--transition); display: flex; flex-direction: column;
+        }
+        .video-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(20, 177, 171, 0.15); }
+        .video-thumb {
+            width: 100%; height: 250px; background: #E0F2F1; position: relative;
+            display: flex; justify-content: center; align-items: center; overflow: hidden;
+        }
+        .video-thumb img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); opacity: 0.9; }
+        .video-card:hover .video-thumb img { transform: scale(1.1); opacity: 1; }
+        .play-btn-overlay {
+            position: absolute; width: 70px; height: 70px; background: rgba(255,255,255,0.9);
+            border-radius: 50%; display: flex; justify-content: center; align-items: center;
+            font-size: 1.5rem; color: var(--bg-dark); transition: var(--transition);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2); padding-left: 5px; /* Centers the triangle */
+        }
+        .video-card:hover .play-btn-overlay { transform: scale(1.1); background: var(--accent-coral); color: white; }
+        .video-info { padding: 2.5rem; }
+        .video-info h3 { font-size: 1.8rem; margin-bottom: 1rem; color: var(--bg-dark); }
+        .video-info p { color: var(--text-muted); font-size: 1rem; }
+        @media (max-width: 768px) { .video-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">
+            <svg width="32" height="32" viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="30" stroke="var(--bg-dark)" stroke-width="6"/><path d="M50 5 L55 40 L90 50 L55 60 L50 95 L45 60 L10 50 L45 40 Z" fill="var(--accent-gold)"/><path d="M50 20 L52 45 L80 50 L52 55 L50 80 L48 55 L20 50 L48 45 Z" fill="var(--bg-dark)"/></svg>
+            PONDY / THROUGH TIME
+        </a>
+        <div class="hamburger"><span></span><span></span><span></span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Story</a></li>
+            <li><a href="watch.html">Watch</a></li>
+            <li><a href="play.html">Play</a></li>
+            <li><a href="explore.html">Explore</a></li>
+        </ul>
+    </header>
+
+    <section class="chapters" style="padding-top: 12rem; min-height: 100vh;">
+        <span class="eyebrow">WATCH • PAUSE • NOTICE</span>
+        <h2 class="section-title">History in motion</h2>
+        <p style="color: var(--text-muted); max-width: 600px;">Explore curated video collections on YouTube.</p>
+        
+        <div class="video-grid">
+            <!-- Card 1: External High-Quality Image for Pondicherry History -->
+            <a href="https://www.youtube.com/results?search_query=history+of+Pondicherry" target="_blank" class="video-card">
+                <div class="video-thumb">
+                    <!-- Using a stunning Unsplash image of Pondicherry's French Quarter -->
+                    <img src="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?q=80&w=1000&auto=format&fit=crop" alt="Pondicherry French Quarter">
+                    <div class="play-btn-overlay">▶</div>
+                </div>
+                <div class="video-info">
+                    <h3>Search: History of Pondicherry</h3>
+                    <p>Use this viewing prompt: Which details belong to ancient Tamil history, and which belong to the colonial period?</p>
+                </div>
+            </a>
+
+            <!-- Card 2: Your Local Arikamedu Image -->
+            <a href="https://www.youtube.com/results?search_query=Arikamedu+history+documentary" target="_blank" class="video-card">
+                <div class="video-thumb">
+                    <!-- Pointing to your local images folder -->
+                    <img src="images/img2.jpg" alt="Arikamedu Archaeology">
+                    <div class="play-btn-overlay">▶</div>
+                </div>
+                <div class="video-info">
+                    <h3>Search: Arikamedu archaeology</h3>
+                    <p>Look for evidence: pottery, beads, trade routes, and what archaeologists can—and cannot—conclude from objects.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+       <!-- NEW PREMIUM FOOTER -->
+    <footer>
+        <div class="footer-links">
+            <a href="https://en.wikipedia.org/wiki/Pondicherry" target="_blank" class="source-btn">
+                <div class="source-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                </div>
+                Pondicherry — Wikipedia
+            </a>
+            <a href="https://en.wikipedia.org/wiki/History_of_Puducherry" target="_blank" class="source-btn">
+                <div class="source-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                </div>
+                History of Puducherry — Wikipedia
+            </a>
+        </div>
+        
+        <div class="footer-credit">
+            <div class="credit-text">
+                <h4>Proudly researched & presented by Nithish T</h4>
+                <p>Grade 10 • A student initiative to make learning history fun</p>
+            </div>
+            <div class="credit-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

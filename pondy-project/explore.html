@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pondy Through Time | Explore</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="explore-page">
+
+    <!-- Custom Cursor Element -->
+    <div class="custom-cursor"></div>
+
+    <header>
+        <a href="index.html" class="logo">
+            <svg width="32" height="32" viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="30" stroke="var(--bg-dark)" stroke-width="6"/><path d="M50 5 L55 40 L90 50 L55 60 L50 95 L45 60 L10 50 L45 40 Z" fill="var(--accent-gold)"/><path d="M50 20 L52 45 L80 50 L52 55 L50 80 L48 55 L20 50 L48 45 Z" fill="var(--bg-dark)"/></svg>
+            PONDY / THROUGH TIME
+        </a>
+        <div class="hamburger"><span></span><span></span><span></span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Story</a></li>
+            <li><a href="watch.html">Watch</a></li>
+            <li><a href="play.html">Play</a></li>
+            <li><a href="explore.html" class="active">Explore</a></li>
+        </ul>
+    </header>
+
+    <!-- NEW FEATURE: FACT CAROUSEL -->
+    <section class="fact-carousel-section">
+        <span class="eyebrow">DID YOU KNOW?</span>
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <h3>Pondicherry was the capital of French India.</h3>
+                <p>It remained under French control for nearly 300 years, which is why the architecture and street grids still feel distinctly European today.</p>
+            </div>
+            <div class="carousel-slide">
+                <h3>The "Kizhur Vote" decided its fate.</h3>
+                <p>In 1954, 170 out of 178 elected representatives voted to merge with the Indian Union, officially ending French colonial rule.</p>
+            </div>
+            <div class="carousel-slide">
+                <h3>Arikamedu was a major Roman trade hub.</h3>
+                <p>Archaeologists have found Roman amphorae, glassware, and coins here, proving that trade between India and Rome flourished 2,000 years ago.</p>
+            </div>
+            
+            <div class="carousel-nav">
+                <button class="carousel-dot active" onclick="currentSlide(0)"></button>
+                <button class="carousel-dot" onclick="currentSlide(1)"></button>
+                <button class="carousel-dot" onclick="currentSlide(2)"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXTRAORDINARY ARCHITECTURE CARDS -->
+    <section class="flip-gallery-section">
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <span class="eyebrow">THE ARCHITECTURE</span>
+            <h2 class="section-title">Explore the Quarters</h2>
+            <p style="color: var(--text-muted);">Hover over the cards to reveal the secrets of Pondicherry's unique urban design.</p>
+        </div>
+        <div class="flip-grid">
+            
+            <!-- Card 1: French Quarter -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <img src="images/img3.jpg" alt="French Quarter" class="parallax-img">
+                    <div class="card-overlay">
+                        <h3>The French Quarter</h3>
+                        <div class="card-details">
+                            <h4>White Town</h4>
+                            <p>Characterized by mustard-yellow colonial villas, tall arched gates, and bougainvillea-lined streets. It was originally reserved for French settlers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Tamil Quarter -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <img src="images/img4.jpg" alt="Tamil Quarter" class="parallax-img">
+                    <div class="card-overlay">
+                        <h3>The Tamil Quarter</h3>
+                        <div class="card-details">
+                            <h4>Black Town</h4>
+                            <p>Located south of the canal, this area is home to vibrant Tamil culture, traditional courtyard houses (veedus), and historic temples.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: The Promenade -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <img src="images/img6.jpg" alt="The Promenade" class="parallax-img">
+                    <div class="card-overlay">
+                        <h3>The Promenade</h3>
+                        <div class="card-details">
+                            <h4>Rock Beach</h4>
+                            <p>A 1.5 km stretch along the Bay of Bengal. The road is closed to traffic every evening, turning it into a massive pedestrian promenade.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://en.wikipedia.org/wiki/Pondicherry" target="_blank" class="source-btn">
+                <div class="source-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+                Pondicherry — Wikipedia
+            </a>
+            <a href="https://en.wikipedia.org/wiki/History_of_Puducherry" target="_blank" class="source-btn">
+                <div class="source-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+                History of Puducherry — Wikipedia
+            </a>
+        </div>
+        <div class="footer-credit">
+            <div class="credit-text">
+                <h4>Proudly researched & presented by Nithish T</h4>
+                <p>Grade 10 • A student initiative to make learning history fun</p>
+            </div>
+            <div class="credit-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
