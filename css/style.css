@@ -374,3 +374,8 @@ footer::before { content: ''; position: absolute; bottom: -50%; left: -10%; widt
     .card-details { max-height: 200px; opacity: 1; margin-top: 1rem; }
     .flip-card:hover .card-overlay h3 { transform: translateY(0); }
 }
+/* Move the scroll to top button to the left so it doesn't hit the chatbot */
+#scroll-top-btn {
+    right: auto;
+    left: 30px;
+}
