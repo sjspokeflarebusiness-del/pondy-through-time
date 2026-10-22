@@ -10,28 +10,33 @@
 <body>
 
     <header>
-        <a href="index.html" class="logo">
+        <a href="#home" class="logo">
             <svg width="32" height="32" viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="30" stroke="var(--bg-dark)" stroke-width="6"/><path d="M50 5 L55 40 L90 50 L55 60 L50 95 L45 60 L10 50 L45 40 Z" fill="var(--accent-gold)"/><path d="M50 20 L52 45 L80 50 L52 55 L50 80 L48 55 L20 50 L48 45 Z" fill="var(--bg-dark)"/></svg>
             PONDY / THROUGH TIME
         </a>
         <div class="hamburger"><span></span><span></span><span></span></div>
         <ul class="nav-links">
-            <li><a href="index.html" class="active">Story</a></li>
-            <li><a href="watch.html">Watch</a></li>
-            <li><a href="play.html">Play</a></li>
-            <li><a href="explore.html">Explore</a></li>
+            <li><a href="#home" class="active">Story</a></li>
+            <li><a href="#watch">Watch</a></li>
+            <li><a href="#play">Play</a></li>
+            <li><a href="#explore">Explore</a></li>
         </ul>
     </header>
 
-    <section class="hero">
+    <!-- HERO / STORY SECTION -->
+    <section class="hero" id="home">
         <div class="hero-content">
             <span class="eyebrow">A GRADE 10 STUDENT INITIATIVE</span>
-            <h1>Pondicherry is not one story.</h1>
+            <h1>
+                <span>Pondicherry</span>
+                <span>is</span>
+                <span>not</span>
+                <span>one</span>
+                <span>story.</span>
+            </h1>
             <p>It is a tide of ancient trade, Tamil kingdoms, European rivalry, freedom movements, and a living coastal culture. Follow the dates. Meet the places. Test what you discover.</p>
             <a href="#chapters" class="btn">Begin the Journey ↓</a>
         </div>
-        
-        <!-- INTERACTIVE MINI MAP -->
         <div class="interactive-map">
             <div class="map-dot" style="top: 20%; left: 30%;">
                 <div class="map-tooltip">Arikamedu (Ancient Port)</div>
@@ -45,11 +50,13 @@
         </div>
     </section>
 
+    <!-- CHAPTERS SECTION -->
     <section class="chapters" id="chapters">
         <span class="eyebrow">SIX CHAPTERS • ONE COAST</span>
         <h2 class="section-title">Walk through time</h2>
         
         <div class="chapter-grid">
+            <!-- Chapter 1 -->
             <div class="chapter-card">
                 <div class="chapter-img-wrapper"><img src="images/img1.jpg" class="chapter-img" alt="Arikamedu"></div>
                 <div class="chapter-content">
@@ -59,6 +66,7 @@
                 </div>
             </div>
 
+            <!-- Chapter 2 -->
             <div class="chapter-card">
                 <div class="chapter-img-wrapper"><img src="images/img2.jpg" class="chapter-img" alt="Tamil Coast"></div>
                 <div class="chapter-content">
@@ -68,6 +76,7 @@
                 </div>
             </div>
 
+            <!-- Chapter 3 -->
             <div class="chapter-card">
                 <div class="chapter-img-wrapper"><img src="images/img3.jpg" class="chapter-img" alt="French Settlement"></div>
                 <div class="chapter-content">
@@ -77,6 +86,7 @@
                 </div>
             </div>
 
+            <!-- Chapter 4 -->
             <div class="chapter-card">
                 <div class="chapter-img-wrapper"><img src="images/img4.jpg" class="chapter-img" alt="Changing Hands"></div>
                 <div class="chapter-content">
@@ -86,6 +96,7 @@
                 </div>
             </div>
 
+            <!-- Chapter 5 -->
             <div class="chapter-card">
                 <div class="chapter-img-wrapper"><img src="images/img5.jpg" class="chapter-img" alt="Indian Union"></div>
                 <div class="chapter-content">
@@ -95,6 +106,7 @@
                 </div>
             </div>
 
+            <!-- Chapter 6 -->
             <div class="chapter-card">
                 <div class="chapter-img-wrapper"><img src="images/img6.jpg" class="chapter-img" alt="Today"></div>
                 <div class="chapter-content">
@@ -106,6 +118,145 @@
         </div>
     </section>
 
+    <!-- WATCH SECTION -->
+    <section class="chapters" id="watch" style="background-color: var(--bg-card);">
+        <span class="eyebrow">WATCH • PAUSE • NOTICE</span>
+        <h2 class="section-title">History in motion</h2>
+        <p style="color: var(--text-muted); max-width: 600px;">Explore curated video collections on YouTube.</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+            <a href="https://www.youtube.com/results?search_query=history+of+Pondicherry" target="_blank" style="display: block; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-md); transition: var(--transition);" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                <img src="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?q=80&w=1000&auto=format&fit=crop" alt="Pondicherry History" style="width: 100%; height: 250px; object-fit: cover;">
+                <div style="padding: 2rem; background: var(--bg-main);">
+                    <h3 style="color: var(--bg-dark); font-size: 1.5rem; margin-bottom: 0.5rem;">Search: History of Pondicherry</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Use this viewing prompt: Which details belong to ancient Tamil history, and which belong to the colonial period?</p>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/results?search_query=Arikamedu+history+documentary" target="_blank" style="display: block; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-md); transition: var(--transition);" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                <img src="images/img1.jpg" alt="Arikamedu Archaeology" style="width: 100%; height: 250px; object-fit: cover;">
+                <div style="padding: 2rem; background: var(--bg-main);">
+                    <h3 style="color: var(--bg-dark); font-size: 1.5rem; margin-bottom: 0.5rem;">Search: Arikamedu archaeology</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Look for evidence: pottery, beads, trade routes, and what archaeologists can—and cannot—conclude from objects.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- PLAY / ARCADE SECTION -->
+    <section class="arcade-section" id="play">
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <span class="eyebrow">THE ARCADE</span>
+            <h2 class="section-title">Test Your Pondy IQ</h2>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">5 interactive games to challenge your knowledge and discover your vibe.</p>
+        </div>
+
+        <div class="games-grid">
+            <!-- Game 1 -->
+            <div class="game-card" id="game-quiz">
+                <h3 class="game-title">1. Timeline Quiz</h3>
+                <p class="game-desc">Which event happened first?</p>
+                <button class="option-btn" data-correct="false">1674 - French settlement begins</button>
+                <button class="option-btn" data-correct="true">1st Century CE - Poduke mentioned</button>
+                <button class="option-btn" data-correct="false">1954 - Transfer to India</button>
+            </div>
+
+            <!-- Game 2 -->
+            <div class="game-card">
+                <h3 class="game-title">2. True or False?</h3>
+                <p class="game-desc">"Poduke is a modern city built by the British."</p>
+                <button class="option-btn" id="btn-true">True</button>
+                <button class="option-btn" id="btn-false">False</button>
+                <div class="result-box" id="g2-result"></div>
+            </div>
+
+            <!-- Game 3 -->
+            <div class="game-card">
+                <h3 class="game-title">3. Guess the Image</h3>
+                <p class="game-desc">Which image represents the ancient port of Arikamedu?</p>
+                <div class="game-image-container">
+                    <img src="images/img4.jpg" class="game-image-choice" data-correct="false" alt="Option 1">
+                    <img src="images/img1.jpg" class="game-image-choice" data-correct="true" alt="Option 2">
+                </div>
+                <div class="result-box" id="g3-result"></div>
+            </div>
+
+            <!-- Game 4 -->
+            <div class="game-card">
+                <h3 class="game-title">4. What's Your Vibe?</h3>
+                <p class="game-desc">Pick your ideal weekend in Pondy:</p>
+                <button class="option-btn vibe-btn" data-vibe="ancient">Exploring ancient ruins and museums</button>
+                <button class="option-btn vibe-btn" data-vibe="french">Sipping coffee in a yellow colonial cafe</button>
+                <button class="option-btn vibe-btn" data-vibe="beach">Walking on the rocky beach at sunset</button>
+                <div class="result-box" id="vibe-result"></div>
+            </div>
+
+            <!-- Game 5 -->
+            <div class="game-card">
+                <h3 class="game-title">5. Word Scramble</h3>
+                <p class="game-desc">Unscramble the official name of the city:</p>
+                <div class="scramble-word">C U D H E R P Y R</div>
+                <input type="text" id="scramble-input" class="game-input" placeholder="Type your answer here...">
+                <button class="btn" id="scramble-btn" style="width: 100%; justify-content: center;">Submit</button>
+                <div class="result-box" id="scramble-result"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPLORE SECTION -->
+    <section class="flip-gallery-section" id="explore">
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <span class="eyebrow">THE ARCHITECTURE</span>
+            <h2 class="section-title">Explore the Quarters</h2>
+            <p style="color: var(--text-muted);">Hover over the cards to reveal the secrets of Pondicherry's unique urban design.</p>
+        </div>
+
+        <div class="flip-grid">
+            <!-- Card 1 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <img src="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?q=80&w=1000&auto=format&fit=crop" alt="French Quarter" class="parallax-img">
+                    <div class="card-overlay">
+                        <h3>The French Quarter</h3>
+                        <div class="card-details">
+                            <h4>White Town</h4>
+                            <p>Characterized by mustard-yellow colonial villas, tall arched gates, and bougainvillea-lined streets. It was originally reserved for French settlers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <img src="https://images.unsplash.com/photo-1620766165457-a8025baa82e0?q=80&w=1000&auto=format&fit=crop" alt="Tamil Quarter" class="parallax-img">
+                    <div class="card-overlay">
+                        <h3>The Tamil Quarter</h3>
+                        <div class="card-details">
+                            <h4>Black Town</h4>
+                            <p>Located south of the canal, this area is home to vibrant Tamil culture, traditional courtyard houses (veedus), and historic temples.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?q=80&w=1000&auto=format&fit=crop" alt="The Promenade" class="parallax-img">
+                    <div class="card-overlay">
+                        <h3>The Promenade</h3>
+                        <div class="card-details">
+                            <h4>Rock Beach</h4>
+                            <p>A 1.5 km stretch along the Bay of Bengal. The road is closed to traffic every evening, turning it into a massive pedestrian promenade.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
         <div class="footer-links">
             <a href="https://en.wikipedia.org/wiki/Pondicherry" target="_blank" class="source-btn">
