@@ -47,20 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // --- 3. SMOOTH PAGE TRANSITIONS ---
-    const transitionOverlay = document.createElement('div');
-    transitionOverlay.id = 'page-transition';
-    document.body.appendChild(transitionOverlay);
-    
-    document.querySelectorAll('a[href$=".html"]').forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            transitionOverlay.style.opacity = '1';
-            setTimeout(() => window.location.href = link.href, 400);
-        });
-    });
-    setTimeout(() => transitionOverlay.style.opacity = '0', 100);
-
     // --- 4. SCROLL REVEAL & 3D TILT ---
     const reveals = document.querySelectorAll('.chapter-card, .game-card, .section-title');
     const observer = new IntersectionObserver((entries) => {
